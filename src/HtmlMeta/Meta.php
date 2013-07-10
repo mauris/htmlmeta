@@ -19,8 +19,8 @@ class Meta implements MetaInterface
     public function render()
     {
         $buffer = '<meta ';
-        foreach ($attributes as $key => $value) {
-            $buffer .= $key . '="' . htmlspecialchars($value, ) . '" ';
+        foreach ($this->attributes as $key => $value) {
+            $buffer .= $key . '="' . htmlspecialchars($value, ENT_QUOTES) . '" ';
         }
         $buffer .= '/>';
         return $buffer;
