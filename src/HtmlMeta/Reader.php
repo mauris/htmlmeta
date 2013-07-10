@@ -12,7 +12,7 @@ class Reader implements ReaderInterface
 
         $crawler = new Crawler($html);
         $crawler = $crawler->filterXPath('//meta');
-        foreach($crawler as $node){
+        foreach ($crawler as $node) {
             $attributes = array();
             $nodeAttributes = $node->attributes;
             $length = $nodeAttributes->length;

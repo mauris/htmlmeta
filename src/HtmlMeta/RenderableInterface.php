@@ -4,5 +4,5 @@ namespace HtmlMeta;
 
 interface RenderableInterface
 {
-    public function render();   
+    public function render();
 }
