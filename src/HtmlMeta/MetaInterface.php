@@ -2,7 +2,7 @@
 
 namespace HtmlMeta;
 
-interface MetaInterface
+interface MetaInterface extends RenderableInterface
 {
     public function attributes();
 }

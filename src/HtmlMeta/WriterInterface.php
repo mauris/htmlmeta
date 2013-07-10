@@ -2,11 +2,9 @@
 
 namespace HtmlMeta;
 
-interface WriterInterface
+interface WriterInterface extends RenderableInterface
 {
     public function add(MetaInterface $meta);
 
     public function addArray($array);
-
-    public function render();
 }
