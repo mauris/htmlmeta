@@ -19,4 +19,11 @@ class MetaTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('HtmlMeta\\MetaInterface', $meta);
         $this->assertEquals($attributes, $meta->attributes());
     }
+
+    public function testRender()
+    {
+        $attributes = array('name' => 'test', 'content' => 'woooo');
+        $meta = new Meta($attributes);
+        $this->assertEquals('<meta name="test" content="woooo" />', $meta->render());
+    }
 }
