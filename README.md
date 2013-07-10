@@ -19,7 +19,7 @@ $writer->add(new Meta(array('charset' => 'utf8')));
 $writer->add(new Meta(array('name' => 'description', 'content' => 'some description')));
 
 echo $writer->render();
->
+
 ````
 
 Outputs to:
