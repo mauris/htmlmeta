@@ -15,4 +15,14 @@ class Meta implements MetaInterface
     {
         return $this->attributes;
     }
+
+    public function render()
+    {
+        $buffer = '<meta ';
+        foreach ($attributes as $key => $value) {
+            $buffer .= $key . '="' . htmlspecialchars($value, ) . '" ';
+        }
+        $buffer .= '/>';
+        return $buffer;
+    }
 }
